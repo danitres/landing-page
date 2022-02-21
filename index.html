@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" >
+        <title>Es krim Mamang Asep</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+        <section id="Home">
+            <div class="circle2" ></div>
+            <div class="circle"></div>
+            <header>
+                <a href="#">
+                    <img  class="logo" src="ice logo.png" alt="logo es"></a>
+                    <h1>Mamang <br>Asep</h1>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>Its not just an ordinary Ice Cream its <span>Mamang Asep</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Kepoin kuy!</a>
+                </div>
+                <div class="img-box">
+                    <img class="gambar" src="ice 1.png" alt="es krim jeruk">
+                </div>
+            </div>
+            <ul class="pilihan">
+                <li><img class="choice" src="ice 1.png" alt="" onclick="imgSlider('ice 1.png')"></li>
+                <li><img class="choice" src="ice 2.png" alt="" onclick="imgSlider('ice 2.png')"></li>
+                <li><img class="choice2" src="ice 3.png" alt="" onclick="imgSlider('ice 3.png')"></li>
+            </ul>
+        </section>
+
+        <section id="product" class="penjelasan" >
+            <div class="video">
+            <iframe src="https://www.youtube.com/embed/ey_QWMhb9co" id="video" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="komen">
+                <h2>Give us a <span> Comment! </span></h2>
+                <form action="/action_page.php">
+                    <label class="pindahtolong" for="email">Email</label>
+                    <input class="pindahtolong" type="email" id="fname" name="email" placeholder="Enter Your Email">
+                
+                    <label class="pindahtolong" for="comment">Your Thought!</label>
+                    <input class="pindahtolong" type="text" id="lname" name="comment" placeholder="Comment us!">
+                    <input class="pindahtolong" type="submit" value="Submit">
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="footer-content">
+                <h3>Mamang Asep</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fab fa-facebook" ></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" ></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube" ></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright 2021. <span> Mamang Asep</span></p>
+            </div>
+        </footer>
+
+        </main>
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.gambar').src = anything;
+            }
+        </script>
+    </body>   
+</html>
